@@ -120,3 +120,4 @@ export default async function Home() {
     </main>
   );
 }
+<main className="min-h-screen overflow-hidden bg-black p-4 pb-28 text-white md:p-6 lg:pb-6"></main>
