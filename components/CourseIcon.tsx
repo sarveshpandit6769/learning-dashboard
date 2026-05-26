@@ -11,14 +11,13 @@ const icons: any = {
   Rocket,
   Sparkles,
   FileCode,
-  BookOpen,
 };
 
 export default function CourseIcon({ name }: { name: string }) {
   const Icon = icons[name] || BookOpen;
 
   return (
-    <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-purple-500/10 text-purple-400">
+    <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-purple-500/10 text-purple-400">
       <Icon size={24} />
     </div>
   );

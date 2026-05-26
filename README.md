@@ -2,6 +2,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
+
 First, run the development server:
 
 ```bash
@@ -34,3 +35,44 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+# Next Gen Learning Dashboard
+
+A futuristic animated student dashboard built with:
+
+- Next.js App Router
+- Supabase
+- Tailwind CSS
+- Framer Motion
+- Lucide React
+
+## Features
+
+- Bento Grid Layout
+- Animated Dashboard
+- Dynamic Supabase Data
+- Framer Motion Interactions
+- Responsive Design
+- Loading Skeletons
+- Error Handling
+- Dynamic Icons
+- Animated Progress Bars
+
+## Setup
+
+```bash
+npm install
+npm run dev
+```
+
+Create `.env.local`
+
+```env
+NEXT_PUBLIC_SUPABASE_URL=
+NEXT_PUBLIC_SUPABASE_ANON_KEY=
+```
+
+## Deployment
+
+Deployed using Vercel.
