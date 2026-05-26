@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { motion } from "framer-motion";
 import {
   LayoutDashboard,
@@ -7,7 +8,6 @@ import {
   TrendingUp,
   Settings,
 } from "lucide-react";
-import { useState } from "react";
 
 const navItems = [
   { name: "Dashboard", icon: LayoutDashboard },
@@ -36,21 +36,13 @@ export default function Sidebar() {
               >
                 {active === item.name && (
                   <motion.div
-                    layoutId="desktop-active-tab"
+                    layoutId="desktop-active"
                     className="absolute inset-0 rounded-2xl bg-purple-500/15"
-                    transition={{
-                      type: "spring",
-                      stiffness: 300,
-                      damping: 25,
-                    }}
                   />
                 )}
 
                 <Icon size={20} className="relative z-10" />
-
-                <span className="relative z-10">
-                  {item.name}
-                </span>
+                <span className="relative z-10">{item.name}</span>
               </button>
             );
           })}
@@ -69,21 +61,13 @@ export default function Sidebar() {
             >
               {active === item.name && (
                 <motion.div
-                  layoutId="mobile-active-tab"
+                  layoutId="mobile-active"
                   className="absolute inset-0 rounded-2xl bg-purple-500/20"
-                  transition={{
-                    type: "spring",
-                    stiffness: 300,
-                    damping: 25,
-                  }}
                 />
               )}
 
               <Icon size={20} className="relative z-10" />
-
-              <span className="relative z-10">
-                {item.name}
-              </span>
+              <span className="relative z-10">{item.name}</span>
             </button>
           );
         })}
