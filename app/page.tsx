@@ -15,7 +15,7 @@ export default async function Home() {
 
   if (error) {
     return (
-      <main className="flex min-h-screen items-center justify-center bg-black p-6 text-white">
+      <main className="min-h-screen overflow-hidden bg-black p-4 pb-28 text-white md:p-6 lg:pb-6">
         <section className="rounded-3xl border border-red-500/40 bg-red-500/10 p-8">
           <h1 className="text-2xl font-bold">
             Database Error
@@ -120,4 +120,3 @@ export default async function Home() {
     </main>
   );
 }
-<main className="min-h-screen overflow-hidden bg-black p-4 pb-28 text-white md:p-6 lg:pb-6"></main>
